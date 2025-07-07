@@ -1,0 +1,144 @@
+
+/*  Paleta de Cores */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+:root {
+  --bg-color: #0e0e10;
+  --primary: #8e44ad;
+  --secondary: #a678d4;
+  --accent: #c8a2ff ;
+  --text-color: #ffffff ;
+  --card-bg: #1a1a1d;
+  --button-bg: #8e44ad;
+  --button-hover: #a678d4 ;
+}
+
+/* Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/*  Container Principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/*  Header */
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: var(--secondary);
+}
+
+/*  Seções e Datas */
+section {
+  margin-bottom: 3rem;
+  border-left: 3px solid var(--primary);
+  padding-left: 1.5rem;
+}
+
+section h2 {
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem;
+  color: var(--accent);
+  position: relative;
+}
+
+section h2::before {
+  content: "📅";
+  position: absolute;
+  left: -2.2rem;
+}
+
+/*  Cards */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.card a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background-color: var(--button-bg);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: var(--button-hover);
+}
+
+/*  Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
+
+  .card a {
+    font-size: 0.9rem;
+  }
+}
+
+/*  Footer */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--primary);
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
