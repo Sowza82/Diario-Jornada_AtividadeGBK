@@ -28,4 +28,3 @@ Criar um layout responsivo e estilizado com foco em:
 
 O projeto simula um blog em estilo de jornal moderno, com datas marcadas, blocos de texto bem definidos e um botão de "ver mais" em cada artigo.
 
-## 📁 Estrutura de Arquivos
